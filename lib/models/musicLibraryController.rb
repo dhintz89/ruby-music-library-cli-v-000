@@ -21,7 +21,7 @@ class MusicLibraryController
     end
     
     def list_songs
-      Song.all.
+      Song.all.sort.map_with_index {|song, i| puts "#{i}. #{song}."}
     end
     
   end
