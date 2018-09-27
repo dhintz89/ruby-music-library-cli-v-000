@@ -10,6 +10,7 @@ class MusicLibraryController
     puts "To list all of your songs, enter 'list songs'."
     user_input = gets.strip
     
+    
   end
     
 end
