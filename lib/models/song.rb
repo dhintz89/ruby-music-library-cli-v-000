@@ -18,11 +18,7 @@ class Song
 #Instance Methods
   
   def artist=(artist)
-<<<<<<< HEAD
     @artist = artist
-=======
-      @artist = artist
->>>>>>> 297de320c5ff0569a5c1f6a57b083c0e7b571ce6
     @artist.add_song(self)
     @artist
   end
@@ -30,6 +26,7 @@ class Song
   def genre=(genre)
     @genre = genre
     @genre.add_song(self)
+    @genre
   end
   
   def save
@@ -66,13 +63,9 @@ class Song
   def self.new_from_filename(filename)
     artist, song, genre = filename.sub(".mp3","").split(' - ')
     song = self.find_or_create_by_name(song)
-<<<<<<< HEAD
     song.artist = Artist.find_or_create_by_name(artist)
     song.genre = Genre.find_or_create_by_name(genre)
     song
-=======
-    song.artist = artist
->>>>>>> 297de320c5ff0569a5c1f6a57b083c0e7b571ce6
   end
   
   def self.create_from_filename(filename)
