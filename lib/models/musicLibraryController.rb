@@ -12,7 +12,7 @@ class MusicLibraryController
     puts "To list all of the genres, enter 'list genres'."
     puts "To list all of the songs by a particular artist, enter 'list artist'."
     puts "To list all of the songs of a particular genre, enter 'list genre'."
-    puts ""
+    puts "To play a song, enter 'play song'."
     puts ""
     puts ""
     user_input = gets.strip
