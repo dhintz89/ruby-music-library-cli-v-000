@@ -6,6 +6,7 @@ class MusicLibraryController
   end
   
   def call
+    user_input = nil
     until user_input == "exit" || "Exit"
       puts "Welcome to your music library!"
       puts "To list all of your songs, enter 'list songs'."
