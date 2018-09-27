@@ -20,6 +20,8 @@ class MusicLibraryController
       user_input = gets.strip
     end
     
+    def list_songs
+    
   end
     
 end
