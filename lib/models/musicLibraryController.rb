@@ -55,7 +55,6 @@ class MusicLibraryController
     list_songs
     list = Song.all.sort_by {|song| song.name}
     selection = gets.strip
-    song = list[selection.to_i-1]
     
   end
   #   list = Song.all.sort_by {|song| song.name}
