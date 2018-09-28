@@ -42,13 +42,15 @@ class MusicLibraryController
     end
   end
     
- def list_songs_by_genre
-   puts "Please enter the name of a genre:"
-   selected_genre = Genre.find_by_name(gets.strip)
-   unless selected_genre == nil
-     selected_genre.songs.sort_by {|song| song.name}.each_with_index {|song, i| puts "#{i+1}. #{song.artist.name} - #{song.name}"}
-   end
- end
+  def list_songs_by_genre
+    puts "Please enter the name of a genre:"
+    selected_genre = Genre.find_by_name(gets.strip)
+    unless selected_genre == nil
+      selected_genre.songs.sort_by {|song| song.name}.each_with_index {|song, i| puts "#{i+1}. #{song.artist.name} - #{song.name}"}
+    end
+  end
 
+  def play_song
+    puts "Please "
 
 end
