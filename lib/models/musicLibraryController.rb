@@ -54,7 +54,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list_songs
     user_index = gets.strip
-    puts "Playing #{selected_song.name} by #{selected_song.artist.name}"
+
   end
 
 end
