@@ -51,7 +51,7 @@ class MusicLibraryController
   end
 
   def play_song
-    index = 0
+    index
     list = Song.all.sort_by {|song| song.name}
     until index >=1 && index <=list.length
       puts "Which song number would you like to play?"
