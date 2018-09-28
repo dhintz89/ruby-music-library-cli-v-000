@@ -56,7 +56,7 @@ class MusicLibraryController
     list = Song.all.sort_by {|song| song.name}
     selection = gets.strip
     index = selection.to_i-1
-    puts "Playing #{list[index]}"
+    puts "Playing #{list[index].name}"
     
     
   end
