@@ -46,7 +46,7 @@ class MusicLibraryController
    puts "Please enter the name of a genre:"
    selected_genre = Genre.find_by_name(gets.strip)
    unless selected_genre == nil
-     selected_genre.songs.sort_by {|song| song.name}.each_with_index {|song, i| puts "#{i+1}. #{song.name} #{song.artist.name}"}
+     selected_genre.songs.sort_by {|song| song.name}.each_with_index {|song, i| puts "#{i+1}. #{song.artist.name} - #{song.name}"}
    end
  end
 
