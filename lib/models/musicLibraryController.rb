@@ -55,7 +55,7 @@ class MusicLibraryController
     begin 
       puts "Which song number would you like to play?"
       index = gets.strip.to_i - 1
-    end
+    end until index >=1 && index <= list.length
     puts "Playing #{list[index].name} by #{list[index].artist.name}" unless list[index] == nil
   end
   
