@@ -54,7 +54,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list = Song.all.sort_by {|song| song.name}
     index = gets.strip.to_i - 1
-    puts "Playing #{list[index].name} by #{list[index].artist.name}"
+    puts "Playing #{list[index].name} by #{list[index].artist.name}" unless list[index] == nil
   end
   
 end
