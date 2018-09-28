@@ -51,11 +51,12 @@ class MusicLibraryController
   end
 
   def play_song
+    puts "Which song number would you like to play?"
     list = Song.all.sort_by {|song| song.name}
     index = gets.strip.to_i - 1
-
-      index >= 0 && index <= list.length
-    puts "Playing #{list[index].name} by #{list[index].artist.name}" unless list[index] == nil
+    if index >= 0 && index <= list.length
+      puts "Playing #{list[index].name} by #{list[index].artist.name}" unless list[index] == nil
+    end
   end
   
 end
