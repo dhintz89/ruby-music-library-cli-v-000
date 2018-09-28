@@ -37,6 +37,7 @@ class MusicLibraryController
   def list_songs_by_artist
     puts "Please enter artist"
     selected_artist = gets.strip
-    
+    selected_artist.songs
+  end
   
 end
