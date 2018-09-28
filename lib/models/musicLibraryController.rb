@@ -53,7 +53,7 @@ class MusicLibraryController
   def play_song
     puts "Which song number would you like to play?"
     list_songs
-    puts "Something else"
+    puts "Playing #{list_songs[3]}"
     
   end
   #   list = Song.all.sort_by {|song| song.name}
