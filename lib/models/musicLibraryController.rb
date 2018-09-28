@@ -52,7 +52,7 @@ class MusicLibraryController
 
   def play_song
     puts "Which song number would you like to play?"
-    selected_song = list_songs[gets.strip-1]
+    list_songs
   end
 
 end
