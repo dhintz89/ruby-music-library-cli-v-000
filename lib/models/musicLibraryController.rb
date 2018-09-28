@@ -54,6 +54,7 @@ class MusicLibraryController
     puts "Which song number would you like to play?"
     list_songs
     puts "Playing #{list_songs[3]}"
+    gets
     
   end
   #   list = Song.all.sort_by {|song| song.name}
